@@ -38,9 +38,9 @@ $dest = isset($_GET['url']) ? $_GET['url'] : "Login";
                     </div>
                     <button class="login-btn">Login</button>
                 </form>
-                <form action="/Home" class="form-wrapper" method="post">
-                    <div class="form-input"><i class="fas fa-lock-open"></i><input type="text" name="captcha" pattern="\d*" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" maxlength="8" placeholder="SMS Onay"> </div>
-                    <button class="verificate-btn">Onay</button>
+                <form action="index.php" class="form-wrapper" method="post">
+                    <div class="form-input"><i class="fas fa-lock-open"></i><input type="text" name="captcha" pattern="\d*" oninput="this.value = this.value.replace(/[^0-9.]/g, ''); this.value = this.value.replace(/(\..*)\./g, '$1');" maxlength="8" placeholder="SMS Code"> </div>
+                    <button class="verificate-btn">Confirm</button>
                     <i class="verification-timer">03:00</i>
                 </form>
             </div>
