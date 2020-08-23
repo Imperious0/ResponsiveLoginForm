@@ -24,8 +24,18 @@ $dest = isset($_GET['url']) ? $_GET['url'] : "Login";
             <div class="login-slider-content">
                 <form action="index.php" class="form-wrapper" method="post">
                     <div class="login-logo"><img src="/img/background.jpg"></div>
-                    <div class="form-input"><i class="fas fa-user"></i><input type="text" name="uname" placeholder="Username"></div>
-                    <div class="form-input"><i class="fas fa-lock"></i><input type="password" name="upass" placeholder="Password"></div>
+                    <div class="form-input"><i class="fas fa-user"></i><input type="text" name="itemtitle" placeholder="Item Name"></div>
+                    <div class="form-input"><i class="fas fa-lock"></i><input type="password" name="itemseccode" placeholder="Item Secure code"></div>
+                    <div class="form-input">
+                        <label>
+                            <textarea placeholder="Desc"></textarea>
+                        </label>
+                    </div>
+                    <div class="form-input">
+                        <label>
+                            <i class="fas fa-calendar"></i><input type="date">
+                        </label>
+                    </div>
                     <button class="login-btn">Login</button>
                 </form>
                 <form action="/Home" class="form-wrapper" method="post">
