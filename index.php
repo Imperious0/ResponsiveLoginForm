@@ -36,6 +36,20 @@ $dest = isset($_GET['url']) ? $_GET['url'] : "Login";
                             <i class="fas fa-calendar"></i><input type="date">
                         </label>
                     </div>
+                    <div class="form-input">
+                        <i class="fas fa-clock"></i><label>
+                            <input type="time">
+                        </label>
+                    </div>
+                    <div class="form-input">
+                        <label>
+                            <select>
+                                <option name="opt1">Option-1</option>
+                                <option name="opt2">Option-2</option>
+                                <option name="opt3">Option-3</option>
+                            </select>
+                        </label>
+                    </div>
                     <button class="login-btn">Login</button>
                 </form>
                 <form action="index.php" class="form-wrapper" method="post">

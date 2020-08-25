@@ -118,7 +118,22 @@
     {
         color: var(--text-color-bright);
     }
-    .form-wrapper input[type="text"], input[type="password"], input[type="date"]
+    .form-wrapper input[type="text"], input[type="password"], input[type="date"], input[type="time"]
+    {
+        font-family: var(--text-font);
+        font-weight: var(--text-font-weight);
+        font-style: var(--text-font-style);
+        font-size: 17px;
+
+        background: transparent;
+        border-style: none;
+        height: 50px;
+        width: 50%;
+        min-width: 40%;
+        text-align: center;
+        color: #ffffff;
+    }
+    .form-wrapper select
     {
         font-family: var(--text-font);
         font-weight: var(--text-font-weight);
